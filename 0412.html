@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        색 <input type="color"><br>
+        숫자 <input type="number" max="100" min="0" step="10" value="1">
+        <input type="range" min="1" max="10" value="5">
+        성별 <select name="gender"><option value="female">여성</option><option value="male">남성</option></select>
+        <br><input type="radio" name="select" id="1" value="1">
+        <label for="1">1번</label>
+
+        <fieldset>
+            <legend>보기</legend>
+            <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="구글크롬"></option>
+            <option value="엣지"></option>
+            <option value="오페라"></option>
+            <option value="사파리"></option>
+            <option value="파이어폭스"></option>
+        </datalist>
+        <input type="file" accept="image/jpg, image/png">
+    </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>

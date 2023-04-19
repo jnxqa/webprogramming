@@ -1,0 +1,11 @@
+#p1{
+    background-color: yellow ; color: red;
+}
+p:hover{
+    background-color: chartreuse;
+}
+a:link{color:aqua;}
+a:visited{background-color: brown;}
+*{
+    color:grey;
+}

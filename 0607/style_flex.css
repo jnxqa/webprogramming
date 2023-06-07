@@ -1,0 +1,18 @@
+.container{
+    background-color: royalblue;
+    width: 250px;
+    height: 1000px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:stretch;
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+    
+}

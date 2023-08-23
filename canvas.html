@@ -6,8 +6,8 @@
 <style type="text/css">
 /*도형스타일 지정*/
 #box{
-	width : 100px;
-	height : 100px;
+	width : 10px;
+	height : 10px;
 	background-color : yellow;
 	border-radius : 50%;
 }
@@ -15,7 +15,7 @@
 </head>
 <body>
 	<h1>기획의도</h1>
-	<p>저는 속도를 빠르게 바꿨습니다. </p>
+	<p>저는 크기를 줄이고 속도를 빠르게 바꿨습니다. </p>
 
 <div id="box"></div> <!-- 도형 -->
 
@@ -35,7 +35,7 @@ function doMove(){
     // setInterval : 일정한 시간 간격으로 수행할 메서드(수행동작==함수, 시간)
 	func = setInterval(function(){  
 		box = document.querySelector("#box"); // body에 작성된 div의 요소를 box변수에 저장
-		num += 5; // 시간 당 움직일 px
+		num += 100; // 시간 당 움직일 px
 
         // margin을 이용하여 왼쪽으로부터 5px씩 밀어내어 오른쪽으로 움직이고자 함        
 		box.style.marginLeft = num + 'px'; 

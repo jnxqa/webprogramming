@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="timeprt()">현재 시간이 궁금한가요?</button>
+    <h1 id="test1"></h1>
+    <h1 id="test2"></h1>
+    <script>
+
+        let time=new Date().getHours();
+        let message;
+        function timeprt(){
+            document.getElementById('test1').innerHTML = '현재 시간은 '+ time + '시';
+            if(time<12){
+                message="좋은 아침입니다";
+            }
+            else{
+                message="좋은 저녁이네요";
+            }
+            document.getElementById('test2').innerHTML = message;
+        }
+    </script>
+</body>
+</html>
